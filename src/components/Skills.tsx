@@ -32,7 +32,7 @@ const Skills = () => {
 			<Reveal>
 				<h3 className="text-2xl font-bold mb-4 text-center">Lenguajes</h3>
 				<div
-					className="grid grid-cols-2 gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-4"
+					className="flex flex-wrap justify-center gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-4"
 				>
 					<DiJavascript1 className="text-yellow-500 mx-auto" />
 					<DiPython className="text-blue-500 mx-auto" />
@@ -44,7 +44,7 @@ const Skills = () => {
 			<Reveal>
 				<h3 className="text-2xl font-bold mb-4 text-center">Frameworks</h3>
 				<div
-					className="grid grid-cols-2 gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-4"
+					className="flex flex-wrap justify-center gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-4"
 				>
 					<DiBootstrap className="text-purple-600 mx-auto" />
 					<DiLaravel className="text-red-500 mx-auto" />
@@ -54,7 +54,7 @@ const Skills = () => {
 			<Reveal>
 				<h3 className="text-2xl font-bold mb-4 text-center">Librerias</h3>
 				<div
-					className="grid grid-cols-2 gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-4"
+					className="flex flex-wrap justify-center gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-4"
 				>
 					<DiReact className="text-cyan-600 mx-auto" />
 					<DiJqueryLogo className="text-blue-600 mx-auto" />
@@ -63,7 +63,7 @@ const Skills = () => {
 			<Reveal>
 				<h3 className="text-2xl font-bold mb-4 text-center">Otros</h3>
 				<div
-					className="grid grid-cols-2 gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-24"
+					className="flex flex-wrap justify-center gap-2 md:flex md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center pb-24"
 				>
 					<DiGithubBadge className="text-white mx-auto" />
 					<DiMysql className="text-blue-600 mx-auto" />
