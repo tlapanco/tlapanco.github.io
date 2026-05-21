@@ -2,15 +2,24 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import loading from "../assets/loading.webp";
 
-// Definimos una interfaz para la posición
 interface Position {
   x: number;
   y: number;
 }
 
-// Interfaz para la respuesta de la API
-interface WaifuResponse {
+interface ApiResponse {
+  results: Result[];
+}
+
+interface Result {
+  anime_name: string;
   url: string;
+  dimensions: Dimensions;
+}
+
+interface Dimensions {
+  width: number;
+  height: number;
 }
 
 const FollowMouse: React.FC = () => {
@@ -18,7 +27,6 @@ const FollowMouse: React.FC = () => {
   const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
   const [cursorImage, setCursorImage] = useState<string>(loading);
 
-  // Lógica del movimiento del puntero
   useEffect(() => {
     const handleMove = (event: PointerEvent) => {
       const { clientX, clientY } = event;
@@ -34,17 +42,20 @@ const FollowMouse: React.FC = () => {
     };
   }, [enabled]);
 
-  // Lógica de efectos visuales y API
   useEffect(() => {
     document.body.classList.toggle("no-cursor", enabled);
 
     const fetchNewImage = async () => {
       if (enabled) {
         try {
-          setCursorImage(loading); // Reset a loading mientras descarga
-          const res = await fetch("https://api.waifu.pics/sfw/smile");
-          const data: WaifuResponse = await res.json();
-          setCursorImage(data.url);
+          setCursorImage(loading);
+
+          const res = await fetch("https://nekos.best/api/v2/smile");
+
+          const data: ApiResponse = await res.json();
+
+          // Tomamos la primera imagen del array
+          setCursorImage(data.results[0].url);
         } catch (error) {
           console.error("Error fetching cursor image:", error);
         }
