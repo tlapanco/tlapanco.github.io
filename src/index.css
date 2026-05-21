@@ -50,4 +50,6 @@ p {
 @theme {
   --color-main-blue: rgb(14, 122, 141);
   --color-main-purple: rgb(150, 139, 168);
+  --shadow-main-blue:  0 4px 20px rgb(14, 122, 141);
+  --shadow-main-purple: 0 4px 20px rgb(150, 139, 168);
 }

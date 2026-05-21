@@ -16,9 +16,7 @@ const Contact = () => {
                 Soy una persona a quien le gustan los retos, con experiencia en
                 el desarrollo web, teniendo participación tanto en el Front-end
                 y Back-end. Egresado de la Universidad Politécnica Metropolitana
-                de Puebla en ingeniería en sistemas computacionales donde
-                alcance un nivel de inglés B2 de acuerdo al CERF como requisito
-                de titulación.
+                de Puebla en ingeniería en sistemas computacionales.
               </p>
             </div>
           </div>

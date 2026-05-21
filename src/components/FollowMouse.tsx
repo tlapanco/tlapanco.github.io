@@ -96,7 +96,7 @@ const FollowMouse: React.FC = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setEnabled(!enabled)}
-        className="border-none"
+        className="border-none cursor-pointer"
       >
         {enabled ? "Desactivar" : "Activar"} seguimiento
       </motion.button>
