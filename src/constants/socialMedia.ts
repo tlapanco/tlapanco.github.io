@@ -6,8 +6,8 @@ import { IoIosMail } from "react-icons/io";
 export const SOCIAL_LINKS : Array<SocialNetwork> = [
 	{
 		name: 'Correo electrónico',
-		username: 'tlapanco.amado@gmail.com',
-		url: 'mailto:tlapanco.amado@gmail.com',
+		username: 'tlapanco.dev+pg@gmail.com',
+		url: 'mailto:tlapanco.dev+pg@gmail.com',
 		Icon: IoIosMail,
 
 	},
